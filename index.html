@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Busque Louvores</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#151820">
+</head>
+<body>
+
+<header class="topo">
+  <h1>Busque Louvor</h1>
+  <input id="search" type="text" placeholder="Buscar louvor..." />
+</header>
+
+<main>
+  <section id="lista-louvores"></section>
+
+  <section id="cifra-view" class="hidden">
+    <div class="controls">
+      <button id="voltar">⬅ Voltar</button>
+
+      <select id="velocidade">
+        <option value="0">Rolagem desligada</option>
+        <option value="0.5">0.5x</option>
+        <option value="1">1.0x</option>
+        <option value="1.5">1.5x</option>
+      </select>
+    </div>
+
+    <pre id="cifra-texto"></pre>
+
+    <button id="whatsapp">Compartilhar louvor no WhatsApp</button>
+  </section>
+</main>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js");
+  }
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

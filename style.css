@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #0f1117;
+  color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.topo {
+  padding: 20px;
+  background: #151820;
+}
+
+.topo h1 {
+  margin-bottom: 10px;
+}
+
+.topo input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+#lista-louvores {
+  padding: 20px;
+}
+
+.louvor {
+  background: #1c1f2a;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.louvor:hover {
+  background: #262a3a;
+}
+
+.hidden {
+  display: none;
+}
+
+#cifra-view {
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.controls button,
+.controls select,
+#whatsapp {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+pre {
+  background: #0b0d13;
+  padding: 20px;
+  border-radius: 10px;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+#whatsapp {
+  margin-top: 15px;
+  background: #25d366;
+  font-weight: bold;
+}
